@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Disposable Island',
 
       theme: ThemeData(
-        
-      ),
+
+    ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

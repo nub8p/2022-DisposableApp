@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './infoScreen.dart';
 import './movementScreen.dart';
+import './movementScreen2.dart';
 import './ReceiptCaptureScreen.dart';
 
 import '../ui/Unit.dart';
@@ -32,9 +33,9 @@ class HomeScreen extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround, // 가운데 정렬
             children: [
-              MovementBox(title: "플러깅"),
+              Plogging(title: "플로깅"),
               Spacer(flex: 10,),
-              MovementBox(title: "분리수거"),
+              Recycling(title: "분리수거"),
             ],
           ),
         )
@@ -72,7 +73,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: fill home page
     return Scaffold(
-      appBar: AppBar(title: Text("Homepage")),
+      appBar: AppBar(backgroundColor: Colors.cyan, title: Text("Homepage"),),
       body: Container(
         padding: EdgeInsets.all(10),
         color: Colors.amber,
@@ -108,9 +109,9 @@ class MyInfoBar extends StatelessWidget {
 }
 
 // nav to [movementScreen] + title
-class MovementBox extends StatelessWidget {
+class Plogging extends StatelessWidget {
   String title;
-  MovementBox({this.title = ""});
+  Plogging({this.title = ""});
 
   @override
   Widget build(BuildContext context) {
@@ -135,6 +136,32 @@ class MovementBox extends StatelessWidget {
   }
 }
 
+class Recycling extends StatelessWidget {
+  String title;
+  Recycling({this.title = ""});
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        minimumSize: const Size(190, 100),
+      ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center, // 가운데 정렬
+        children: [
+          TitleText(title:title),
+          TitleText(title:"하러가기"),
+        ],
+      ),
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MovementScreen2(title: title,)),
+        );
+      },
+    );
+  }
+}
 
 // nav to [ReceiptCaptureScreen]
 class GoReceiptBar extends StatelessWidget {

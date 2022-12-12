@@ -24,6 +24,7 @@ class DisposableExtractionScreen extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return Container(
             height: 50,
+            color: Colors.white,
             alignment: Alignment.center,
             child: Text('${saveDis(Random().nextInt(4))}'),
           );
@@ -63,7 +64,8 @@ class DisposableExtractionScreen extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                    MaterialPageRoute(builder: (context)
+                    => HomeScreen(Disposable)),
                   );
                 },
               )

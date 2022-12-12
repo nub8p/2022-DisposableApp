@@ -8,6 +8,15 @@ import '../ui/Unit.dart';
 
 
 class HomeScreen extends StatelessWidget {
+  List<String> inputStream;
+  String inputLine = "";
+  HomeScreen(this.inputStream) {
+    for(int i = 0; i < inputStream.length; i++){
+      inputLine += inputStream[i];
+    }
+  }
+
+
 
   // 개인 정보 프로필 영역
   Widget InfoSection() {
@@ -50,6 +59,7 @@ class HomeScreen extends StatelessWidget {
         child : Container(
           //color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),
+          child:Text(inputLine)
         )
     );
   }

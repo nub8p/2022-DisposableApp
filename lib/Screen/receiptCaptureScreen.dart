@@ -38,7 +38,7 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
     });
   }
 
-  // OCR
+  // OCR 광학 문자 인식
   ocrImage(String img64) async {
     var url = 'https://api.ocr.space/parse/image';
     var payload = {"base64Image": "data:image/jpg;base64,${img64.toString()}","language" :"kor"};
@@ -49,6 +49,7 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
 
     setState(() {
       _parsedtext = result['ParsedResults'][0]['ParsedText'];
+
     });
   }
 

@@ -8,6 +8,15 @@ import '../ui/Unit.dart';
 
 
 class HomeScreen extends StatelessWidget {
+  List<String> inputStream;
+  String inputLine = "";
+  HomeScreen(this.inputStream) {
+    for(int i = 0; i < inputStream.length; i++){
+      inputLine += inputStream[i];
+    }
+  }
+
+
 
   // 개인 정보 프로필 영역
   Widget InfoSection() {
@@ -16,7 +25,7 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         height: 80,
         child : Container(
-          color: Colors.lightGreenAccent,
+          //color: Colors.lightGreenAccent,
           child: MyInfoBar(),
         )
     );
@@ -28,7 +37,6 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         height: 140,
         child : Container(
-          color: Colors.deepOrangeAccent,
           margin:EdgeInsets.only(top:10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround, // 가운데 정렬
@@ -49,8 +57,9 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         height: 100,
         child : Container(
-          color: Colors.lightGreenAccent,
+          //color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),
+          child:Text(inputLine)
         )
     );
   }
@@ -72,22 +81,31 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: fill home page
-    return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.cyan, title: Text("Homepage"),),
-      body: Container(
-        padding: EdgeInsets.all(10),
-        color: Colors.amber,
-          child : Center(
-            child: Column(
-              children: [
-                InfoSection(),
-                MovementSection(),
-                islandSection(),
-                ReceiptSection(),
-              ],
-            ),
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          fit: BoxFit.cover,
+          image: AssetImage('assets/images/background1.png'), // 배경 이미지
+        ),
+      ),
+      child: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(backgroundColor: Colors.cyan, title: Text("Homepage"),),
+          body: Container(
+              padding: EdgeInsets.all(10),
+              color: Colors.transparent,
+              child : Center(
+                child: Column(
+                  children: [
+                    InfoSection(),
+                    MovementSection(),
+                    islandSection(),
+                    ReceiptSection(),
+                  ],
+                ),
+              )
           )
-      )
+      ),
     );
   }
 }

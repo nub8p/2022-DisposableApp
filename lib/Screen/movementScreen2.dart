@@ -167,7 +167,8 @@ class MovementScreen2 extends StatelessWidget {
                                                             children: [
                                                               Text("금속 캔", style: TextStyle(fontWeight: FontWeight.bold),),
                                                               Text("담배꽁초 등 이물질을 제거한 후 가능한 압착하여 배출"),
-                                                              Text("부탄가스, 살충제 용기 등은 플라스틱 부분을 제거 후 구멍을 뚫어 배출")
+                                                              Text("부탄가스, 살충제 용기 등은"),
+                                                              Text("플라스틱 부분을 제거 후 구멍을 뚫어 배출"),
                                                             ]
                                                         ),
                                                       )
@@ -272,7 +273,7 @@ class MovementScreen2 extends StatelessWidget {
                                                   flex: 2,
                                                   child: Column(
                                                       children: [
-                                                        Image(height: 80, image: AssetImage("assets/images/yogurt.png"))
+                                                        Image(height: 60, image: AssetImage("assets/images/yogurt.png"))
                                                       ]
                                                   ),
                                                 ),
@@ -310,7 +311,7 @@ class MovementScreen2 extends StatelessWidget {
                                                         flex: 2,
                                                         child: Column(
                                                             children: [
-                                                              Image(height: 80, image: AssetImage("assets/images/plastic.png"))
+                                                              Image(height: 60, image: AssetImage("assets/images/plastic.png"))
                                                             ]
                                                         ),
                                                       ),
@@ -353,7 +354,7 @@ class MovementScreen2 extends StatelessWidget {
                                                         flex: 2,
                                                         child: Column(
                                                             children: [
-                                                              Image(width: 80, image: AssetImage("assets/images/styrofoam.png"))
+                                                              Image(width: 60, image: AssetImage("assets/images/styrofoam.png"))
                                                             ]
                                                         ),
                                                       ),
@@ -398,7 +399,7 @@ class MovementScreen2 extends StatelessWidget {
                                                         flex: 2,
                                                         child: Column(
                                                             children: [
-                                                              Image(height: 80, image: AssetImage("assets/images/vinyl.png"))
+                                                              Image(height: 60, image: AssetImage("assets/images/vinyl.png"))
                                                             ]
                                                         ),
                                                       ),

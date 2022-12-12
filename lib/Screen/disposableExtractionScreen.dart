@@ -20,7 +20,7 @@ class DisposableExtractionScreen extends StatelessWidget {
     return ListView.builder(
         scrollDirection: Axis.vertical,
         padding: const EdgeInsets.all(8),
-        itemCount: Random().nextInt(2)+2,
+        itemCount: Random().nextInt(2)+10,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             height: 50,

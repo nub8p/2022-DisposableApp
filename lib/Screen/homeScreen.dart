@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
     // TODO : 쓰레기 쌓이는 동작 구현
     return SizedBox(
         width: double.infinity,
-        height: 460,
+        height: 100,
         child : Container(
           color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),

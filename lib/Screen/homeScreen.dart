@@ -31,6 +31,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
+
+
   // 환경 운동 영역
   Widget MovementSection() {
     return SizedBox(
@@ -55,14 +57,49 @@ class HomeScreen extends StatelessWidget {
     // TODO : 쓰레기 쌓이는 동작 구현
     return SizedBox(
         width: double.infinity,
-        height: 100,
+        height: 460,
         child : Container(
           //color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),
-          child:Text(inputLine)
+          child:showTrash()
         )
     );
   }
+
+  String matchingTrash(String trash) {
+    String ret = 'default';
+    switch (trash) {
+      case '플라스틱':
+        ret = 'plastic'; break;
+      case '캔':
+        ret = 'can'; break;
+      case '종이류':
+        ret = 'paper'; break;
+      default:
+        break;
+    }
+    return ret + '_icon.png';
+  }
+
+  Widget showTrash() {
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: inputStream.length,
+      itemBuilder: (BuildContext context, int index){
+        return Container(
+            child: Row(
+              children: [
+                Image.asset('assets/images/' + matchingTrash(inputStream[index])),
+                //Text(inputStream[index])
+              ],
+            )
+        );
+      },
+    );
+  }
+
+
+
 
   // 영수증 등록하기 버튼 영역
   Widget ReceiptSection() {

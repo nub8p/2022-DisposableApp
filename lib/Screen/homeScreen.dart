@@ -8,6 +8,13 @@ import '../ui/Unit.dart';
 
 
 class HomeScreen extends StatelessWidget {
+  List<String> inputStream;
+  String inputLine = "";
+  HomeScreen(this.inputStream) {
+    for(int i = 0; i < inputStream.length; i++){
+      inputLine += inputStream[i] + " ";
+    }
+  }
 
   // 개인 정보 프로필 영역
   Widget InfoSection() {
@@ -50,7 +57,41 @@ class HomeScreen extends StatelessWidget {
         child : Container(
           //color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),
+          // inputLine
+          child: showTrash(),
         )
+    );
+  }
+
+  String matchingTrash(String trash) {
+    String ret = 'default';
+    switch (trash) {
+      case '플라스틱':
+        ret = 'plastic'; break;
+      case '캔':
+        ret = 'can'; break;
+      case '종이류':
+        ret = 'paper'; break;
+      default:
+        break;
+    }
+    return ret + '.png';
+  }
+
+  Widget showTrash() {
+    return ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: inputStream.length,
+      itemBuilder: (BuildContext context, int index){
+        return Container(
+          child: Row(
+            children: [
+              Image.asset('assets/images/' + matchingTrash(inputStream[index])),
+              //Text(inputStream[index])
+            ],
+          )
+        );
+      },
     );
   }
 

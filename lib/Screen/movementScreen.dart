@@ -53,44 +53,44 @@ class PlogList extends StatelessWidget {
                   headingRowColor:
                     MaterialStateColor.resolveWith((states) => Colors.cyan),
                   columns: [
-                    DataColumn(label: Text('이미지')),
-                    DataColumn(label: Text('제목')),
-                    DataColumn(label: Text('일정')),
-                    DataColumn(label: Text('장소')),
+                    DataColumn(label: Text('이미지', style: TextStyle(fontSize: 12))),
+                    DataColumn(label: Text('제목', style: TextStyle(fontSize: 12))),
+                    DataColumn(label: Text('일정', style: TextStyle(fontSize: 12))),
+                    DataColumn(label: Text('장소', style: TextStyle(fontSize: 12))),
                   ],
                   rows: const <DataRow>[
                     /*여기부터*/
                     DataRow(
                       cells: <DataCell>[
-                        DataCell(Text("이미지")),
-                        DataCell(Text("플로깅1")),
-                        DataCell(Text("2022-12-10")),
-                        DataCell(Text("대전")),
+                        DataCell(Text("이미지", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("플로깅1", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("2022-12-10", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("대전", style: TextStyle(fontSize: 12))),
                       ],
                     ),
                     /*여기까지가 하나의 row*/
                     DataRow(
                       cells: <DataCell>[
-                        DataCell(Text("이미지")),
-                        DataCell(Text("플로깅2")),
-                        DataCell(Text("2022-12-11")),
-                        DataCell(Text("서울")),
+                        DataCell(Text("이미지", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("플로깅2", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("2022-12-11", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("서울", style: TextStyle(fontSize: 12))),
                       ],
                     ),
                     DataRow(
                       cells: <DataCell>[
-                        DataCell(Text("이미지")),
-                        DataCell(Text("플로깅3")),
-                        DataCell(Text("2022-12-15")),
-                        DataCell(Text("청주")),
+                        DataCell(Text("이미지", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("플로깅3", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("2022-12-15", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("청주", style: TextStyle(fontSize: 12))),
                       ],
                     ),
                     DataRow(
                       cells: <DataCell>[
-                        DataCell(Text("이미지")),
-                        DataCell(Text("플로깅4")),
-                        DataCell(Text("2022-12-20")),
-                        DataCell(Text("공주")),
+                        DataCell(Text("이미지", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("플로깅4", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("2022-12-20", style: TextStyle(fontSize: 12))),
+                        DataCell(Text("공주", style: TextStyle(fontSize: 12))),
                       ],
                     )
                   ],

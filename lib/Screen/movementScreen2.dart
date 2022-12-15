@@ -50,7 +50,8 @@ class MovementScreen2 extends StatelessWidget {
                                                     children: [
                                                       Text("종이류", style: TextStyle(fontWeight: FontWeight.bold),),
                                                       Text("물기에 젖지 않도록 하고 반듯하게 펴서 묶어서 배출"),
-                                                      Text("비닐 코팅된 표지, 테이프, 공책의 스프링 등은 반드시 제거 후 배출"),
+                                                      Text("비닐 코팅된 표지, 테이프, 공책의 스프링 등은"),
+                                                      Text("반드시 제거 후 배출"),
                                                     ]
                                                 ),
                                               )
@@ -127,7 +128,8 @@ class MovementScreen2 extends StatelessWidget {
                                                             children: [
                                                               Text("유리병", style: TextStyle(fontWeight: FontWeight.bold),),
                                                               Text("병 속 이물질을 제거한 후 뚜껑을 분리하여 배출"),
-                                                              Text("술병, 음료수병 등 빈용기보증금 대상 유리병은 소매점 등에서 환불"),
+                                                              Text("술병, 음료수병 등 빈용기보증금 대상"),
+                                                              Text("유리병은 소매점 등에서 환불"),
                                                             ]
                                                         ),
                                                       )
@@ -205,7 +207,8 @@ class MovementScreen2 extends StatelessWidget {
                                               child: Column(
                                                   children: [
                                                     Text("고철류", style: TextStyle(fontWeight: FontWeight.bold),),
-                                                    Text("이물질이 섞이지 않도록 한 후 봉투에 넣거나 끈으로 묶어 배출"),
+                                                    Text("이물질이 섞이지 않도록 한 후"),
+                                                    Text("봉투에 넣거나 끈으로 묶어 배출"),
                                                   ]
                                               ),
                                             )
@@ -282,7 +285,8 @@ class MovementScreen2 extends StatelessWidget {
                                                   child: Column(
                                                       children: [
                                                         Text("요구르트병", style: TextStyle(fontWeight: FontWeight.bold),),
-                                                        Text("은박지로 된 병뚜껑을 반드시 제거하여 요구르트병만 모아 배출"),
+                                                        Text("은박지로 된 병뚜껑을 반드시 제거하여"),
+                                                        Text("요구르트병만 모아 배출"),
                                                       ]
                                                   ),
                                                 )
@@ -321,8 +325,10 @@ class MovementScreen2 extends StatelessWidget {
                                                              children: [
                                                                Text("플라스틱", style: TextStyle(fontWeight: FontWeight.bold),),
                                                                Text("재활용표시가 되어 있는 플라스틱만 배출"),
-                                                               Text("장난감, 문구류, 가전제품, 가구, 옷걸이, 비디오테이프, 고무호스"),
-                                                               Text("등의 플라스틱 제품은 일반 쓰레기 및 대형생활 폐기물로 배출"),
+                                                               Text("장난감, 문구류, 가전제품, 가구,"),
+                                                               Text("옷걸이, 비디오테이프, 고무호스"),
+                                                               Text("등의 플라스틱 제품은 일반 쓰레기"),
+                                                               Text("및 대형생활 폐기물로 배출"),
                                                              ]
                                                          )
 
@@ -408,9 +414,11 @@ class MovementScreen2 extends StatelessWidget {
                                                         child: Column(
                                                             children: [
                                                               Text("일회용 비닐", style: TextStyle(fontWeight: FontWeight.bold),),
-                                                              Text("라면 봉지, 과자봉지, 세제 봉지 등 분리배출 표시가 있는 비닐포장재는"),
+                                                              Text("라면 봉지, 과자봉지, 세제 봉지 등 "),
+                                                              Text("분리배출 표시가 있는 비닐포장재는"),
                                                               Text("속이 보이는 봉투에 넣어 흩어지지 않도록 묶어서 배출"),
-                                                              Text("일회용 비닐봉지는 안에 있는 이물질과 물기를 완전히 제거하고 배출"),
+                                                              Text("일회용 비닐봉지는 안에 있는"),
+                                                              Text("이물질과 물기를 완전히 제거하고 배출"),
                                                             ]
                                                         ),
                                                       )

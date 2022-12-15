@@ -75,7 +75,7 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
       icon: Icon(Icons.add_a_photo),
       label: TitleText(title: "Camera"),
       style: ElevatedButton.styleFrom(
-        minimumSize: const Size(190, 50),
+        minimumSize: const Size(160, 50),
       ),
     );
   }
@@ -89,7 +89,7 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
       icon: Icon(Icons.wallpaper),
       label: TitleText(title: "Gallery"),
       style: ElevatedButton.styleFrom(
-        minimumSize: const Size(190, 50),
+        minimumSize: const Size(160, 50),
       ),
     );
   }
@@ -97,7 +97,6 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
   // 버튼 모음 바
   Widget captureImageBar() {
     return Container(
-      color: Colors.tealAccent,
       margin:EdgeInsets.all(10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround, // 가운데 정렬
@@ -114,7 +113,7 @@ class _ReceiptCaptureState extends State<ReceiptCaptureScreen> {
     return Container(
         width:double.infinity,
         color: const Color(0xffd0cece),
-        height: 100,
+        height: 60,
         child:
             Center(
               child: _parsedtext == null

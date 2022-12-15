@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
     // TODO : 쓰레기 쌓이는 동작 구현
     return SizedBox(
         width: double.infinity,
-        height: 460,
+        height: 300,
         child : Container(
           //color: Colors.lightGreenAccent,
           margin:EdgeInsets.only(top:10),
@@ -172,7 +172,7 @@ class Plogging extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-        minimumSize: const Size(190, 100),
+        minimumSize: const Size(170, 100),
         ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center, // 가운데 정렬
@@ -199,7 +199,7 @@ class Recycling extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        minimumSize: const Size(190, 100),
+        minimumSize: const Size(170, 100),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center, // 가운데 정렬

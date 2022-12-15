@@ -15,7 +15,7 @@ class _InfoState extends State<InfoScreen> {
   Widget build(BuildContext context) {
     // TODO: fill info page
     return Scaffold(
-      appBar: AppBar(title: Text("개인정보")),
+      appBar: AppBar(title: Text("Infopage")),
       body: Center(
         child : Container(
           child: Text("Welcome to Infopage"),
